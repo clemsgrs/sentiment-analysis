@@ -1,0 +1,18 @@
+{
+    "model": "bert",
+    "pre_trained": true,
+    "pre_trained_model_name": "bert-base-cased",
+    "nepochs": 20,
+    "train_batch_size": 32,
+    "val_batch_size": 32,
+    "test_batch_size": 1,
+    "embedding_dim": 100,
+    "hidden_dim": 256,
+    "num_layer": 3,
+    "bidirectional": true,
+    "dropout_p": 0.5,
+    "num_classes": 3,
+    "checkpoint_dir": "checkpoints",
+    "result_dir": "results"
+}
+

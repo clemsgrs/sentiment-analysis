@@ -13,7 +13,7 @@ def create_model(p, vocab_size, pad_idx):
     elif p.model == 'gru':
         model = GRU(p, vocab_size, pad_idx)
     elif p.model == 'bert':
-        model = BERT(p, vocab_size, pad_idx)
+        model = BERT(p)
     else:
         raise ValueError(f'Model {p.model} not recognized')
 
@@ -126,6 +126,7 @@ class LSTM(nn.Module):
 
 
 class GRU(nn.Module):
+
   def __init__(self, p, vocab_size, pad_idx):
     
     super().__init__()
@@ -175,3 +176,26 @@ class GRU(nn.Module):
     # hidden = [batch size, hid dim * num directions]
         
     return self.fc(hidden)
+
+
+class BERT(nn.Module):
+
+  def __init__(self, p):
+    
+    super(BERT, self).__init__()
+    self.p = p
+    if p.pre_trained:
+      self.bert = BertModel.from_pretrained(p.pre_trained_model_name)
+    else:
+      
+    self.drop = nn.Dropout(p.dropout_p)
+    self.out = nn.Linear(self.bert.config.hidden_size, p.num_classes)
+  
+  def forward(self, input_ids, attention_mask):
+    dect = self.bert(
+      input_ids=input_ids,
+      attention_mask=attention_mask
+    )
+    pooled_output = dect['pooler_output']
+    output = self.drop(pooled_output)
+    return self.out(output)

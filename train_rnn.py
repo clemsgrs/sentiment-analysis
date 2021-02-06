@@ -13,7 +13,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 from utils import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--config', type=str, default="default.json", metavar='N', help='config file')
+parser.add_argument('--config', type=str, default="rnn_default.json", metavar='N', help='config file')
 args = parser.parse_args()
 params = open_config_file(args.config)
 
@@ -46,7 +46,7 @@ print(f'Unique tokens in headline vocabulary: {len(headline.vocab)}')
 print(f'Unique tokens in sentiment vocabulary: {len(sentiment.vocab)}')
 
 # Create DataLoaders
-train_iter, val_iter, test_iter = data.BucketIterator.splits(
+train_loader, val_loader, test_loader = data.BucketIterator.splits(
     (train_dataset, val_dataset, test_dataset), 
     batch_sizes=(params.train_batch_size, params.val_batch_size, params.test_batch_size),
     sort_key=lambda x: len(x.headline), sort_within_batch=True, device=device)
@@ -77,8 +77,8 @@ for epoch in range(params.nepochs):
 
   start_time = time.time()
   
-  train_loss, train_acc = train(model, train_iter, optimizer, criterion)
-  valid_loss, valid_acc = evaluate(model, val_iter, criterion)
+  train_loss, train_acc = train_rnn(model, train_loader, optimizer, criterion)
+  valid_loss, valid_acc = evaluate_rnn(model, val_loader, criterion)
   
   end_time = time.time()
   epoch_mins, epoch_secs = epoch_time(start_time, end_time)
@@ -93,10 +93,10 @@ for epoch in range(params.nepochs):
 
 # TESTING
 model.load_state_dict(torch.load(os.path.join(params.checkpoint_dir, f'best_{model_desc}.pt')))
-test_loss, test_acc = evaluate(model, test_iter, criterion)
+test_loss, test_acc = evaluate_rnn(model, test_loader, criterion)
 print(f'Test Loss: {test_loss:.3f} | Test Acc: {test_acc*100:.2f}%')
 
-y_pred, y_pred_probs, y_test = get_predictions(model, test_iter)
+y_pred, y_pred_probs, y_test = get_predictions_rnn(model, test_loader)
 print(classification_report(y_test, y_pred, target_names=class_names))
 
 cm = confusion_matrix(y_test, y_pred)
