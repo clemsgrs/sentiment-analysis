@@ -64,7 +64,7 @@ for epoch in range(params.nepochs):
   print(f'Epoch {epoch + 1}/{params.nepochs}')
   print('-' * 10)
 
-  train_acc, train_loss = train_epoch(
+  train_acc, train_loss = train_bert(
     model,
     train_loader,    
     loss_fn, 
@@ -76,7 +76,7 @@ for epoch in range(params.nepochs):
 
   print(f'Train loss {train_loss} accuracy {train_acc}')
 
-  val_acc, val_loss = eval_model(
+  val_acc, val_loss = eval_bert(
     model,
     val_loader,
     loss_fn, 
@@ -98,7 +98,7 @@ for epoch in range(params.nepochs):
 
 model.load_state_dict(torch.load('best_model_state.pth'))
 
-test_acc, _ = eval_model(
+test_acc, _ = eval_bert(
   model,
   test_loader,
   loss_fn,
