@@ -1,5 +1,7 @@
 # Financial Sentiment Analysis
-Academic project
+Academic project as part of the "Deep Learning" course at MVA.<br>
+Goal was to get familiar with NLP methods & try different models up to the now popular Transformer architecture.<br>
+3-class classification task.
 
 # Dataset
 I'm using the public dataset Financial PhraseBank (https://arxiv.org/abs/1307.5336).<br>
