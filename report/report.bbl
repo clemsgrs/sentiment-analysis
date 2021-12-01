@@ -1,0 +1,194 @@
+\begin{thebibliography}{10}
+
+\bibitem{headlines}
+Marc Velay and Fabrice Daniel.
+\newblock Using {NLP} on news headlines to predict index trends.
+\newblock 2018.
+
+\bibitem{transformer}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock 2017.
+
+\bibitem{hypothesis}
+Burton~G. Malkiel.
+\newblock The efficient market hypothesis and its critics.
+\newblock {\em Journal of Economic Perspectives}, 17(1):59--82, March 2003.
+
+\bibitem{liu_2015}
+Bing Liu.
+\newblock {\em Sentiment Analysis: Mining Opinions, Sentiments, and Emotions}.
+\newblock Cambridge University Press, 2015.
+
+\bibitem{financial_sentiment-1}
+M.~{Day} and C.~{Lee}.
+\newblock Deep learning for financial sentiment analysis on finance news
+  providers.
+\newblock In {\em 2016 IEEE/ACM International Conference on Advances in Social
+  Networks Analysis and Mining (ASONAM)}, pages 1127--1134, 2016.
+
+\bibitem{financial_sentiment-2}
+Lodi Dodevska, Viktor Petreski, Kostadin Mishev, Ana Gjorgjevikj, Irena
+  Vodenska, Lubomir Chitkushev, and Dimitar Trajanov.
+\newblock Predicting companies stock price direction by using sentiment
+  analysis of news articles.
+\newblock 06 2019.
+
+\bibitem{financial_sentiment-3}
+Wataru Souma, Irena Vodenska, and Hideaki Aoyama.
+\newblock Enhanced news sentiment analysis using deep learning methods.
+\newblock {\em Journal of Computational Social Science}, 2, 01 2019.
+
+\bibitem{financial_sentiment-4}
+Sven Crone and Christian Koeppel.
+\newblock Predicting exchange rates with sentiment indicators: An empirical
+  evaluation using text mining and multilayer perceptrons.
+\newblock {\em IEEE/IAFE Conference on Computational Intelligence for Financial
+  Engineering, Proceedings (CIFEr)}, pages 114--121, 10 2014.
+
+\bibitem{financial_sentiment-5}
+Chester Curme, H.~Stanley, and Irena Vodenska.
+\newblock Coupled network approach to predictability of financial market
+  returns and news sentiments.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  18:1550043, 10 2015.
+
+\bibitem{ml-1}
+Abinash Tripathy, Ankit Agrawal, and Santanu Rath.
+\newblock Classification of sentiment reviews using n-gram machine learning
+  approach.
+\newblock {\em Expert Systems with Applications}, 57, 03 2016.
+
+\bibitem{ml-2}
+Casey Whitelaw, Navendu Garg, and Shlomo Argamon.
+\newblock Using appraisal groups for sentiment analysis.
+\newblock 11 2005.
+
+\bibitem{tfidf}
+Justin Martineau and Tim Finin.
+\newblock Delta tfidf: An improved feature space for sentiment analysis.
+\newblock 01 2009.
+
+\bibitem{dl-1}
+Lei Zhang, Shuai Wang, and Bing Liu.
+\newblock Deep learning for sentiment analysis : {A} survey.
+\newblock {\em CoRR}, abs/1801.07883, 2018.
+
+\bibitem{dl-2}
+Dario Stojanovski, Gjorgji Strezoski, Gjorgji Madjarov, and Ivica Dimitrovski.
+\newblock Twitter sentiment analysis using deep convolutional neural network.
+\newblock volume 9121, 06 2015.
+
+\bibitem{dl-3}
+Oscar Araque, Ignacio Corcuera-Platas, J.~Fernando Sánchez-Rada, and Carlos
+  Iglesias.
+\newblock Enhancing deep learning sentiment analysis with ensemble techniques
+  in social applications.
+\newblock {\em Expert Systems with Applications}, 77, 02 2017.
+
+\bibitem{loughran}
+Tim Loughran and Bill Mcdonald.
+\newblock When is a liability not a liability? textual analysis, dictionaries,
+  and 10-ks.
+\newblock {\em The Journal of Finance}, 66:35 -- 65, 02 2011.
+
+\bibitem{naivebayes}
+Gang Wang, Tianyi Wang, Bolun Wang, Divya Sambasivan, Zengbin Zhang, Haitao
+  Zheng, and Ben Zhao.
+\newblock Crowds on wall street: Extracting value from social investing
+  platforms.
+\newblock 06 2014.
+
+\bibitem{kraus}
+Mathias Kraus and Stefan Feuerriegel.
+\newblock Decision support from financial disclosures with deep neural networks
+  and transfer learning.
+\newblock {\em CoRR}, abs/1710.03954, 2017.
+
+\bibitem{rnn-1}
+Duyu Tang, Bing Qin, and Ting Liu.
+\newblock Document modeling with gated recurrent neural network for sentiment
+  classification.
+\newblock pages 1422--1432, 01 2015.
+
+\bibitem{rnn-2}
+Kai~Sheng Tai, Richard Socher, and Christopher~D. Manning.
+\newblock Improved semantic representations from tree-structured long
+  short-term memory networks.
+\newblock {\em CoRR}, abs/1503.00075, 2015.
+
+\bibitem{cnn-1}
+Yoon Kim.
+\newblock Convolutional neural networks for sentence classification.
+\newblock {\em CoRR}, abs/1408.5882, 2014.
+
+\bibitem{cnn-2}
+Rie Johnson and Tong Zhang.
+\newblock Deep pyramid convolutional neural networks for text categorization.
+\newblock pages 562--570, 01 2017.
+
+\bibitem{att-1}
+Sahar Sohangir, Dingding Wang, Anna Pomeranets, and Taghi Khoshgoftaar.
+\newblock Big data: Deep learning for financial sentiment analysis.
+\newblock {\em Journal of Big Data}, 5, 01 2018.
+
+\bibitem{sota_lstm}
+M.~{Maia}, A.~{Freitas}, and S.~{Handschuh}.
+\newblock Finsslx: A sentiment analysis model for the financial domain using
+  text simplification.
+\newblock In {\em 2018 IEEE 12th International Conference on Semantic Computing
+  (ICSC)}, pages 318--319, 2018.
+
+\bibitem{word2vec}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock 2013.
+
+\bibitem{glove}
+Jeffrey Pennington, Richard Socher, and Christopher Manning.
+\newblock Glove: Global vectors for word representation.
+\newblock volume~14, pages 1532--1543, 01 2014.
+
+\bibitem{elmo}
+Matthew~E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark,
+  Kenton Lee, and Luke Zettlemoyer.
+\newblock Deep contextualized word representations.
+\newblock 2018.
+
+\bibitem{FinBERT}
+Dogu Araci.
+\newblock Finbert: Financial sentiment analysis with pre-trained language
+  models.
+\newblock 2019.
+
+\bibitem{malo}
+Pekka Malo, Ankur Sinha, Pyry Takala, Pekka Korhonen, and Jyrki Wallenius.
+\newblock Good debt or bad debt: Detecting semantic orientations in economic
+  texts, 2013.
+
+\bibitem{BERT}
+Jacob Devlin, Ming{-}Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock {BERT:} pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock 2018.
+
+\bibitem{rnn-original}
+D.~Rumelhart, Geoffrey~E. Hinton, and R.~J. Williams.
+\newblock Learning internal representations by error propagation.
+\newblock 1986.
+
+\bibitem{lstm-original}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9:1735--80, 12 1997.
+
+\bibitem{gru-original}
+Kyunghyun Cho, Bart van Merrienboer, {\c{C}}aglar G{\"{u}}l{\c{c}}ehre, Fethi
+  Bougares, Holger Schwenk, and Yoshua Bengio.
+\newblock Learning phrase representations using {RNN} encoder-decoder for
+  statistical machine translation.
+\newblock {\em CoRR}, abs/1406.1078, 2014.
+
+\end{thebibliography}

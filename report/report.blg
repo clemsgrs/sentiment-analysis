@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: unsrt.bst
+Database file #1: egbib.bib
+Warning--empty journal in headlines
+Warning--empty journal in transformer
+Warning--empty booktitle in financial_sentiment-2
+Warning--empty booktitle in ml-2
+Warning--empty booktitle in tfidf
+Warning--empty booktitle in dl-2
+Warning--empty journal in naivebayes
+Warning--empty booktitle in rnn-1
+Warning--empty booktitle in cnn-2
+Warning--empty journal in word2vec
+Warning--empty booktitle in glove
+Warning--empty journal in elmo
+Warning--empty journal in FinBERT
+Warning--empty journal in BERT
+Warning--empty booktitle in rnn-original
+You've used 33 entries,
+            1791 wiz_defined-function locations,
+            605 strings with 8910 characters,
+and the built_in function-call counts, 7214 in all, are:
+= -- 560
+> -- 395
+< -- 8
++ -- 144
+- -- 111
+* -- 434
+:= -- 1158
+add.period$ -- 98
+call.type$ -- 33
+change.case$ -- 32
+chr.to.int$ -- 0
+cite$ -- 48
+duplicate$ -- 360
+empty$ -- 690
+format.name$ -- 111
+if$ -- 1623
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 33
+newline$ -- 167
+num.names$ -- 33
+pop$ -- 136
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 203
+stack$ -- 0
+substring$ -- 270
+swap$ -- 90
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 15
+while$ -- 49
+width$ -- 35
+write$ -- 336
+(There were 15 warnings)

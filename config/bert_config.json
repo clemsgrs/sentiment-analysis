@@ -9,7 +9,6 @@
     "embedding_dim": 100,
     "hidden_dim": 256,
     "num_layer": 3,
-    "bidirectional": true,
     "dropout_p": 0.5,
     "num_classes": 3,
     "checkpoint_dir": "checkpoints",
